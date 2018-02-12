@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Crime Policing</title>
+      	<link rel="stylesheet" href="{{ url_for('static', filename='resu.css') }}">; 
+         <!--<link rel="stylesheet" type="text/css" href="main.css"> -->
+	</head>
+	<body>
+		<center><br><br><br><br><br><br><img src=  "{{url_for('static',filename="no.gif")}}" style="width:500px;height:400px;" align="middle"></center>
+		<p><center><br><br><br><br><font size="40" color="green"><u>Possibility of each crime based upon past record:</u></font><br></center></p>
+		<p><center><font size="10" color="red" >Assault({{predict[0]}}%)</font></center></p>
+		<div class="meter">
+  		<span style="width: {{predict1[0]}}")></span>
+		</div>
+		<p><center><font size="10" color="red" >Burglary({{predict[1]}}%)</font></center></p>
+		<br>
+		<div class="meter">
+  		<span style="width: {{predict1[1]}}"></span>
+		</div>
+		<p><center><font size="10" color="red">Drunkness({{predict[2]}}%)</font></center></p>
+		<br>
+		<div class="meter">
+  		<span style="width: {{predict1[2]}}"></span>
+		</div>
+		<p><center><font size="10" color="red ">Larceny/Theft({{predict[3]}}%)</font></center></p>
+		<br>
+		<div class="meter">
+  		<span style="width: {{predict1[3]}}"></span>
+		</div>
+		<p><center><font size="10" color="red ">Non Criminal({{predict[4]}}%)</font></center></p>
+		<br>
+		<div class="meter">
+  		<span style="width: {{predict1[4]}}"></span>
+		</div>
+		<p><center><font size="10" color="red ">Robbery({{predict[6]}}%)</font></center></p>
+		<br>
+		<div class="meter">
+  		<span style="width: {{predict1[6]}}"></span>
+		</div>
+		<p><center><font size="10" color="red ">Suspicious OCC({{predict[7]}}%)</font></center></p>
+		<br>
+		<div class="meter">
+  		<span style="width: {{predict1[7]}}"></span>
+		</div>
+		<p><center><font size="10" color="red ">Vandalism({{predict[8]}}%)</font></center></p>
+		<br>
+		<div class="meter">
+  		<span style="width: {{predict1[8]}}"></span>
+		</div>
+		<p><center><font size="10" color="red">Vehicle Theft({{predict[9]}}%)</font></center></p>
+		<br>
+		<div class="meter">
+  		<span style="width: {{predict1[9]}}"></span>
+		</div>
+		<p><center><font size="10" color="red">Other Offences({{predict[5]}}%)</font></center></p>
+		<br>
+		<div class="meter">
+  		<span style="width: {{predict1[5]}}"></span>
+		</div>
+
+		<center><br><br><br><br><br><br><img src=  "{{url_for('static',filename="call.jpg")}}" style="width:1300px;height:400px;" align="middle"></center>
+		
+	</body>
+</html>
